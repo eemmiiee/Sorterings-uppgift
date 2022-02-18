@@ -1,77 +1,99 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-
-namespace Sorterings_uppgift
+using System.Threading;
+namespace mergsort
 {
-    class Program
+   class MergeSort {
+  
+   
+    void merge(int[] arr, int l, int m, int r)
     {
-        static void Main(string[] args)
-        {
-            Random rnd = new Random();
-
-            List<int> rndlist = new List<int>();
-            List<int> randList = new List<int>();
-
-            Stopwatch sw = new Stopwatch();
-            Stopwatch stopwatch = new Stopwatch();
-
-
-            for (int i = 0; i < 1000; i++){
-                rndlist.Add(rnd.Next());
-                randList.Add(rnd.Next());
-        }
-
-        //bubblesort
-        int listLenght = rndlist.Count;
-
-        sw.Start();
-
-        for(int a = 0; a < (listLenght - 1); a++){
-            for(int b = 0; b < (listLenght - 1 - a); b++){
-                if(rndlist[b] > rndlist[b + 1]){
-                    int c = rndlist[b + 1];
-                    rndlist[b + 1] = rndlist[b];
-                    rndlist[b] = c;
-                }
-            }
-        }
-
-        sw.Stop();
-
-        foreach(int a in rndlist){
-            Console.WriteLine(a);
-        }
-
-
-        //Insertionsort
-        int Lenghtlist = randList.Count;
-
-        stopwatch.Start();
-        for(int d = 1; d < Lenghtlist; ++d){
-            int key = randList[d];
-            int e = d - 1;
-
-            while(e >= 0 && randList[e] > key)
-            {
-                randList[e + 1] = randList[e];
-                e = e - 1;
-            }
-            randList[e + 1] = key;
-        }
         
-    
-        stopwatch.Stop();
-
-        foreach(int b in randList){
-            Console.WriteLine(b);
+        int n1 = m - l + 1;
+        int n2 = r - m;
+  
+        int[] L = new int[n1];
+        int[] R = new int[n2];
+        int i, j;
+  
+      
+        for (i = 0; i < n1; ++i)
+            L[i] = arr[l + i];
+        for (j = 0; j < n2; ++j)
+            R[j] = arr[m + 1 + j];
+  
+      
+        i = 0;
+        j = 0;
+  
+     
+        int k = l;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
         }
-
-
-        Console.WriteLine($"Bubblesort: {sw.ElapsedMilliseconds} \nInsertionsort: {stopwatch.ElapsedMilliseconds}");
-    
+  
+      
+        while (i < n1) {
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+  
+        
+        while (j < n2) {
+            arr[k] = R[j];
+            j++;
+            k++;
         }
     }
-        
-
+  
+   
+    void sort(int[] arr, int l, int r)
+    {
+        if (l < r) {
+            
+            int m = l+ (r-l)/2;
+  
+           
+            sort(arr, l, m);
+            sort(arr, m + 1, r);
+  
+          
+            merge(arr, l, m, r);
+        }
+    }
+  
+    
+    static void printArray(int[] arr)
+    {
+        int n = arr.Length;
+        for (int i = 0; i < n; ++i)
+            Console.Write(arr[i] + " ");
+        Console.WriteLine();
+    }
+  
+   
+    public static void Main(String[] args)
+    {int []arr = new int[8000];
+    Random rnd = new Random();
+    for (int i = 0; i < 8000; i++) {
+  arr[i] = rnd.Next(0,1000) ;
+    }
+    Stopwatch stopwatch = new Stopwatch();
+    stopwatch.Start();
+     MergeSort ob = new MergeSort();
+        ob.sort(arr, 0, arr.Length - 1);
+        stopwatch.Stop();
+        Console.WriteLine("\nSorted array");
+        printArray(arr);
+        Console.WriteLine("Mergsort: {0} ", stopwatch.ElapsedMilliseconds);
 }
+   }}
