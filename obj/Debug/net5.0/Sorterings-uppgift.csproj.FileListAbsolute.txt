@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.exe
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.deps.json
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.runtimeconfig.dev.json
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.dll
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\ref\Sorterings-uppgift.dll
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\bin\Debug\net5.0\Sorterings-uppgift.pdb
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.dll
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\ref\Sorterings-uppgift.dll
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.pdb
+C:\Users\Admin\Documents\GitHub\Sorterings-uppgift\obj\Debug\net5.0\Sorterings-uppgift.genruntimeconfig.cache

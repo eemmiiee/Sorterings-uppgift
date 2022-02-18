@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Emmie Bubblesort & Insertionsort\\Emmie Bubblesort & Insertionsort.csproj",
-      "projectName": "Emmie Bubblesort & Insertionsort",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Emmie Bubblesort & Insertionsort\\Emmie Bubblesort & Insertionsort.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Sorterings-uppgift\\Sorterings-uppgift.csproj",
+      "projectName": "Sorterings-uppgift",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Sorterings-uppgift\\Sorterings-uppgift.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Emmie Bubblesort & Insertionsort\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Sorterings-uppgift\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
